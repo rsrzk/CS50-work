@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1>Home</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in shares %}
+                <tr>
+                    <td>{{ row['symbol'] }}</td>
+                    <td>{{ row['shares'] }}</td>
+                    <td>{{ row['price'] | usd }}</td>
+                    <td>{{ row['value'] | usd  }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>TOTAL</td>
+                <td>{{ total_shares }}</td>
+                <td>&nbsp;</td>
+                <td>{{ total_value | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="mb-3"> Cash: {{ user_cash | usd }}</div>
+    <div class="mb-3"> Net worth: {{ (user_cash + total_value) | usd }}</div>
+{% endblock %}

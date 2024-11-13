@@ -1,0 +1,25 @@
+RENTAL AGREEMENT
+
+This Rental Agreement ("Agreement") is made and entered into on this [Date], by and between:
+
+Landlord: [Landlord Name]
+Tenant: [Tenant Name]
+
+1. Property:
+   The Landlord agrees to rent the property located at [Property Address] to the Tenant for the term of this Agreement.
+
+2. Term:
+   The term of this Agreement shall be [Lease Term], commencing on [Start Date] and ending on [End Date].
+
+3. Rent and Deposit:
+   The Tenant agrees to pay monthly rent of [Rent Amount], due on the [Due Date] of each month. A security deposit of [Deposit Amount] is also required.
+
+4. Maintenance:
+   The Tenant agrees to maintain the property in good condition and promptly report any damages to the Landlord.
+
+5. Termination:
+   Either party may terminate this Agreement with [Notice Period] days written notice.
+
+IN WITNESS WHEREOF, the parties hereto have executed this Agreement as of the date first above written.
+
+[Signature of Landlord]    [Signature of Tenant]

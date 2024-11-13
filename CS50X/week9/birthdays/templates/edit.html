@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Edit Birthday: {{ name }}</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Month</th>
+                            <th>Day</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                <form action="/edit" method="post">
+                                    <input name="id" type="hidden" value="{{ birthday.id }}">
+                                    <input autocomplete="off" autofocus name="name" value="{{ birthday.name }}" type="text">
+                                    <input autocomplete="off" name="month" value="{{ birthday.month }}" type="text">
+                                    <input autocomplete="off" name="day" value="{{ birthday.day }}" type="text">
+                                    <button type="submit">Edit birthday</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

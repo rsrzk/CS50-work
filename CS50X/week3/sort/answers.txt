@@ -1,0 +1,20 @@
+sort1 uses: bubble sort
+
+How do you know?: Bubble sort is quick when sorted, but takes a long time when reversed.
+sorted r=3.141 u=0.024 s=0.155
+reversed r=8.088 u=4.370 s=0.171
+random r=7.788 u=5.039 s=0.151
+
+sort2 uses: merge sort
+
+How do you know?: Merge sort is the fastest of the three sorting algorithms by a large margin.
+sorted r=2.397 u=0.017 s=0.150
+reversed r=2.389 u=0.043 s=2.389
+random r=1.700 u=0.027 s=0.156
+
+sort3 uses: selection sort
+
+How do you know?: Whether the array has been sorted or not, it takes approximately similar amounts of time because the algorithm will still need to compare the elements similar amounts of times.
+sorted r=5.207 u=1.748 s=0.138
+reversed r=4.979 u=1.951 s=0.170
+random r=3.670 u=1.755 s=0.166
